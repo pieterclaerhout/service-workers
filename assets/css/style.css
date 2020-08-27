@@ -9,6 +9,8 @@ body {
 h1 {
     margin-top: 0;
     text-align: center;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 1em;
 }
 
 .center {
@@ -31,5 +33,9 @@ a {
 }
 
 footer {
-    border-top: 1px solid gray;
+    border-top: 1px solid lightgray;
+}
+
+img.fullwidth {
+    width: 100%;
 }
