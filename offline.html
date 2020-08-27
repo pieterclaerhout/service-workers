@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Choose Your Language</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="serviceworker" href="serviceworker.js">
+
+</head>
+
+<body>
+
+    <div id="page">
+
+        <p class="center"><img src="assets/images/logo.png" width="128" height="128" /></p>
+
+        <h1 class="center">Offline</h1>
+
+        <h2 class="center">You're not online…</h2>
+
+    </div>
+
+    <script>
+        if (navigator && navigator.serviceWorker) {
+            navigator.serviceWorker.register('serviceworker.js');
+        }
+    </script>
+
+</body>
+
+</html>
